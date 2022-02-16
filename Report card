@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+   int cls,roll;
+   int maths,cp,eng,bio,chem;
+   double sum , per;
+   string name;
+    
+cout<<"\n****REPORT CARD***";
+   cout<<"\n\nName of the student :\t";
+   cin>>name;
+   cout<<"\nClass :\t";
+   cin>>cls;
+   cout<<"\nRoll no : ";
+   cin>>roll;
+   
+   
+    
+   cout<<"\n\nMAXIMUM MARK CAN BE OBTAINED IS 100";
+   
+   cout<<"\n\nMark scored in Mathematics :\t";
+   cin>>maths;
+   cout<<"\nMark scored in Computer :\t";
+   cin>>cp;
+   cout<<"\nMark scored in English :\t";
+   cin>>eng;
+   cout<<"\nMark scored in Biology :\t";
+   cin>>bio;
+   cout<<"\nMark scored in Chemistry :\t";
+   cin>>chem;
+   
+   sum=maths+cp+bio+eng+chem;
+    
+
+   cout<<"\n\nTotal mark obtained : \t"<<sum;
+   
+   per =(sum*100)/500;
+   
+   cout<<"\n\nPercentage is: "<<per<<'%';
+    cout<<"\n\nCurrent status of the student :";
+    
+    
+   if(per<50){
+       cout<<"\tFailed . Not Eligible for Higher Studies";
+   }
+   else{
+       cout<<"\tPassed . Eligible for Higher Studies";
+   }
+   
+ 
+   return 0;
+
+}
